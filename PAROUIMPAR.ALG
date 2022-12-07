@@ -1,19 +1,24 @@
 Algoritmo "ParOuImpar"
-//Desenvolva um programa que leia um número inteiro e mostre se ele é PAR ou
-//ÍMPAR.
+// Crie um programa que leia 6 números inteiros e no final mostre quantos deles
+//são pares e quantos são ímpares.
 
 Var
- N : inteiro
+   num, contador, contadorpar, contadorimpar: inteiro
 
 
 Inicio
-      Escreva (" Digite um numero: ")
-      Leia (N)
-      Se (N % 2 =0) entao
-         Escreva ( "o numero é par")
-      Senao
-           Escreva ("o numero é impar")
+   contador <- 0
+   Enquanto (contador<6) faca
+      EscrevaL ("Informe um número: ")
+      Leia (num)
+      contador <- contador+1
+      Se (num%2=0) entao
+         contadorpar <- contadorpar+1
+      senao
+         contadorimpar <- contadorimpar+1
       FimSe
-
+   FimEnquanto
+   EscrevaL ("numero de impares: ", contadorimpar)
+   EscrevaL ("numero de pares: ", contadorpar)
 
 Fimalgoritmo
